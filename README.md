@@ -130,54 +130,6 @@ All plots generated during exploratory analysis are stored in the **plots folder
 
 ---
 
-### 📊 Transaction Status Distribution
-
-![Transaction Status](plots/status_distribution.png)
-
----
-
-### 💰 Transaction Amount Distribution
-
-![Amount Distribution](plots/amount_distribution.png)
-
----
-
-### ⏰ Transactions by Hour
-
-![Transactions by Hour](plots/transactions_by_hour.png)
-
----
-
-### ⚠️ Failure Rate by Hour
-
-![Failure Rate](plots/failure_rate_hour.png)
-
----
-
-### 🏦 Sender Bank Distribution
-
-![Sender Bank](plots/sender_bank_distribution.png)
-
----
-
-### 🏦 Receiver Bank Distribution
-
-![Receiver Bank](plots/receiver_bank_distribution.png)
-
----
-
-### 💳 Transaction Amount vs Status
-
-![Amount vs Status](plots/amount_vs_status.png)
-
----
-
-### 🔗 Feature Correlation Heatmap
-
-![Correlation Heatmap](plots/correlation_heatmap.png)
-
----
-
 # ⚙️ Installation
 
 Clone the repository:
