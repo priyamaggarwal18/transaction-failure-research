@@ -106,7 +106,7 @@ The dataset used in this project is stored in the repository.
 
 Original dataset source:
 
-https://www.kaggle.com/datasets/devildyno/upi-payment-transactions
+https://www.kaggle.com/datasets/devildyno/upi-payment-transactions-dataset
 
 ---
 
