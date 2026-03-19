@@ -4,8 +4,6 @@
 
 <div align="center">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/priyamaggarwal18/transaction-failure-research?style=for-the-badge&color=green">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/priyamaggarwal18/transaction-failure-research?style=for-the-badge&color=green">
-  <img alt="GitHub forks" src="https://img.shields.io/github/forks/priyamaggarwal18/transaction-failure-research?style=for-the-badge&color=green">
   <img alt="Last commit" src="https://img.shields.io/github/last-commit/priyamaggarwal18/transaction-failure-research?style=for-the-badge&color=green">
 </div>
 
