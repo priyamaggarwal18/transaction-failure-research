@@ -1,36 +1,29 @@
+# 💳 Proactive Prediction of UPI Transaction Failure using Machine Learning 🚀
 
-# 💳📊 UPI Transaction Failure Prediction using Machine Learning 🚀
-
-
-<div align="center">
+<div>
+  <img src="https://img.shields.io/badge/Name-Priyam%20Aggarwal-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Roll%20Number-2210992098-orange?style=for-the-badge">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/priyamaggarwal18/transaction-failure-research?style=for-the-badge&color=green">
   <img alt="Last commit" src="https://img.shields.io/github/last-commit/priyamaggarwal18/transaction-failure-research?style=for-the-badge&color=green">
 </div>
 
 <br>
 
-This repository presents an **academic machine learning study** that analyzes synthetic UPI transaction data and builds predictive models to estimate the probability of transaction failures.
+## 📝 Research Overview
+This repository contains the implementation and findings of the academic research paper:  
+**"PROACTIVE PREDICTION OF UPI TRANSACTION FAILURE USING MACHINE LEARNING ON SYNTHETIC DATA"** *Authored by: Priyam Aggarwal and Dr. Ajay Kumar (Chitkara University)*.
 
-The project explores how **transaction metadata such as amount, time of day, and bank identifiers** can influence the likelihood of payment failures.
-
-The goal is to demonstrate how **predictive analytics can improve payment reliability in digital payment ecosystems**.
+While existing systems detect failures after they occur, this research introduces a **proactive mechanism** to predict the likelihood of a Unified Payments Interface (UPI) transaction failure **before execution**. By analyzing transaction metadata, the system estimates failure probability to improve user experience and reduce system load during peak hours.
 
 ---
 
-# 📌 Project Overview
+## 🏗️ Project Architecture
+The proposed solution acts as a predictive layer that works alongside existing digital payment systems to analyze details before execution.
 
-Digital payment systems like **UPI (Unified Payments Interface)** process millions of transactions every day.  
-While most transactions succeed, some fail due to factors such as:
-
-- ⏱ Peak transaction load  
-- 🏦 Bank server response delays  
-- 💰 High transaction amounts  
-- 🌐 Network congestion  
-- 🔄 Bank‑to‑bank routing issues  
-
-This project investigates whether **machine learning models can learn patterns in transaction data to predict failures before execution**.
-
-The work is purely **research and educational**, using **synthetic data**.
+* **Data Ingestion Layer:** Processes synthesized transaction datasets (CSV format).
+* **Processing Layer:** Handles feature engineering and data cleaning to identify hidden patterns.
+* **Model Training Layer:** Utilizes **Random Forest** and **XGBoost** algorithms for high-performance classification.
+* **Evaluation Layer:** Measures success through Accuracy, Precision, Recall, and ROC-AUC scores.
 
 ---
 
@@ -62,140 +55,64 @@ upi-failure-prediction
 
 ---
 
-# 📊 Notebooks
+## 📊 Notebooks & Analysis
 
-### 📈 Exploratory Data Analysis
-
-Click to open the notebook:
-
-➡️ **[Open EDA Notebook](src/eda_plots.ipynb)**
-
-This notebook performs:
-
-- Data exploration  
-- Transaction pattern analysis  
-- Feature understanding  
-- Visualization of payment behavior  
-
----
+### 📈 Exploratory Data Analysis (EDA)
+➡️ **[Open EDA Notebook](src/eda_plots.ipynb)** Performs pattern analysis, peak load identification (Hour of Day), and visualizes the impact of sender/receiver banks on transaction success rates.
 
 ### 🤖 Machine Learning Model
-
-Click to open the notebook:
-
-➡️ **[Open Model Training Notebook](src/model_training.ipynb)**
-
-This notebook includes:
-
-- Feature engineering  
-- Data preprocessing  
-- Train/Test split  
-- Random Forest model  
-- XGBoost model  
-- Transaction failure prediction  
+➡️ **[Open Model Training Notebook](src/model_training.ipynb)** Includes feature engineering (extracting Transaction Hour, Day of Week, and Bank IDs), data preprocessing, and model training using an 80/20 train-test split.
 
 ---
 
-# 📂 Dataset
-
-The dataset used in this project is stored in the repository.
-
-➡️ **[Open Dataset](data/transactions.csv)**
-
-Original dataset source:
-
-https://www.kaggle.com/datasets/devildyno/upi-payment-transactions-dataset
+## 📂 Dataset
+The study utilized a synthetic dataset of **500,000+ transactions** to simulate realistic behavior while ensuring data privacy and ethical compliance.
+* **Source:** [Kaggle UPI Payment Dataset](https://www.kaggle.com/datasets/devildyno/upi-payment-transactions-dataset)
+* **Repository Link:** [Open Dataset](data/transactions.csv)
 
 ---
 
-# ⚖️ Ethics & Data Disclaimer
-
-This project uses a **synthetic dataset** designed for machine learning experimentation.
-
-✔ No real financial data is used  
-✔ No real bank or user data is included  
-✔ Used strictly for **academic research purposes**
-
-This project **is not affiliated with NPCI or any financial institution**.
+## 📈 Key Research Findings
+* **Peak Load Impact:** Transaction failure rates are significantly higher during peak hours due to server overload.
+* **Amount Influence:** Higher transaction amounts correlate with an increased probability of failure.
+* **Bank Patterns:** Specific inter-bank routing issues and sender/receiver bank combinations play a critical role in reliability.
 
 ---
 
-# 📈 Generated Visualizations
-
-All plots generated during exploratory analysis are stored in the **plots folder**.
-
-➡️ **[Open Plots Folder](plots)**
-
----
-
-# ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/upi-failure-prediction.git
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-➡️ **[View Requirements File](requirements.txt)**
+## ⚙️ Setup & Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/priyamaggarwal18/transaction-failure-research.git](https://github.com/priyamaggarwal18/transaction-failure-research.git)
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Run the analysis:** Open the notebooks in `src/` using VS Code or Jupyter.
 
 ---
 
-# 🚀 Running the Project
-
-Open the notebooks in **Jupyter Notebook or VS Code**.
-
-Run exploratory analysis:
-
-```
-src/eda_plots.ipynb
-```
-
-Run model training:
-
-```
-src/model_training.ipynb
-```
+## 🛠️ Technologies Used
+* **Python:** Pandas, NumPy, Scikit-learn, XGBoost
+* **Visualization:** Matplotlib, Seaborn
+* **Tools:** Jupyter Notebook, Git
 
 ---
 
-# 🎯 Research Objective
-
-This project demonstrates how machine learning can be used to analyze digital payment transactions and predict the probability of transaction failures using transaction metadata such as:
-
-- Transaction amount  
-- Time of transaction  
-- Sender bank  
-- Receiver bank  
-
-The goal is to explore how predictive analytics could help improve **digital payment reliability**.
+## ⚖️ Ethics & Data Disclaimer
+✔ No real financial or user data is used; the project utilizes **synthetic data**.  
+✔ Strictly for **academic research purposes**.  
 
 ---
-
-# 🛠 Technologies Used
-
-- 🐍 Python
-- 📊 Pandas
-- 🔢 NumPy
-- 📉 Matplotlib
-- 📈 Seaborn
-- 🤖 Scikit-learn
-- ⚡ XGBoost
-- 📓 Jupyter Notebook
 
 # 
 <div>
   <img src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1" alt="Contributions" align="left">
-  <h3 align="left">Maintained By - Priyam Aggarwal (https://github.com/priyamaggarwal18)</h3>
+  <h3 align="left">Maintained By - Priyam Aggarwal</h3>
     <a href="https://itspriyam.vercel.app" target="_blank" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=web&logoColor=white" alt="Portfolio">
-  </a>&nbsp&nbsp;
+  </a>&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/priyamaggarwal" target="_blank" style="text-decoration: none;">
   <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>&nbsp&nbsp;
+</a>&nbsp;&nbsp;
 </div>
